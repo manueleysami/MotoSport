@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="MotoSport es una web para los aficionados de moto diseñado para expresar los servicios, modelos disponibles y conocer nuestro negocio"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/script.js" type="module"></script>
+    <script defer src="js/jquery.js" type="module"></script>
+    <script defer src="js/formulario.js" type="module"></script>
+
+    <title>MotoSport &mdash; El mejor servicio en coche deportivos</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Logo MotoSport" src="img/logo-motosport.png" />
+      </a>
+
+      <nav class="navbar">
+        <ul class="navbar-lista">
+          <li><a class="navbar-link" href="#">Inicio</a></li>
+          <li><a class="navbar-link" href="#">Modelos</a></li>
+          <li>
+            <a class="navbar-link" href="#">Clientes</a>
+          </li>
+          <li><a class="navbar-link" href="#">Servicio</a></li>
+          <li>
+            <a class="navbar-link navbar-accion" href="#">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="navbar-movil">
+        <ion-icon class="mavbar-movil-icono" name="menu-outline"></ion-icon>
+        <ion-icon class="mavbar-movil-icono" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="seccion-hero" id="hero">
+        <div class="hero">
+          <div class="hero-contenedor">
+            <h1 class="hero-titulo">Bienvenido a MotoSport</h1>
+            <p class="hero-descripcion">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, ex.
+            </p>
+            <a
+              href="#modelos"
+              class="btn btn--full margin-right-sm margin-bottom"
+              >Nuevas motos</a
+            >
+            <a href="#caracteristicas" class="btn btn--outline"
+              >Características &darr;</a
+            >
+          </div>
+          <div class="hero-imagen-contenedor">
+            <picture>
+              <img
+                src="img/hero-moto.png"
+                class="hero-imagen"
+                alt="motos deportivos. Hero de MotoSport"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion-patrocinadores">
+        <div class="container">
+          <h2 class="patrocionadores-titulo">Nuestros Patrocinadores</h2>
+          <div class="logos">
+            <img src="img/logos/photo_5026379821575416463_x.jpeg" alt="Kawasaki logo" />
+            <img src="img/logos/photo_5026379821575416459_m.jpeg" alt="Aprilia logo" />
+            <img src="img/logos/photo_5026379821575416462_m.jpeg" alt="Honda logo" />
+            <img src="img/logos/photo_5026379821575416465_m.jpeg" alt="Suzuki logo" />
+            <img src="img/logos/photo_5026379821575416460_m.jpeg" alt="BMW logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion-caracteristicas" id="caracteristicas">
+        <div class="container">
+          <span class="subtitulo">Nuevos modelos disponibles</span>
+          <h2 class="titulo-principal">Exposición de motos últimos modelos</h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="caracteristica-contenedor">
+            <p class="caracteristica-numero">01</p>
+            <h3 class="titulo-secundario">
+              Diseñados para desarrollar a altas velocidades
+            </h3>
+            <p class="caracteristica-descripcion">
+              Aun cuando también está pensado para ser conducido dentro de la
+              ciudad. Puedes ofrecer un desempeño impecable en autopistas o
+              pista sintética.
+            </p>
+          </div>
+
+          <div class="caracteristica-imagen-contenedor">
+            <img
+              src="img/pexels-vikram-sundaramoorthy-1119796.jpg"
+              class="caracteristica-imagen"
+              alt="caracteristica-moto"
+            />
+          </div>
+
+          <div class="caracteristica-imagen-contenedor">
+            <img
+              src="img/erkka-wessman-nKhJCl4AgPU-unsplash.jpg"
+              class="caracteristica-imagen"
+              alt="caracteristica-moto"
+            />
+          </div>
+          <div class="caracteristica-contenedor">
+            <p class="caracteristica-numero">02</p>
+            <h3 class="titulo-secundario">
+              Combinación de deportividad y confort
+            </h3>
+            <p class="caracteristica-descripcion">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, sunt?
+            </p>
+          </div>
+
+          <div class="caracteristica-contenedor">
+            <p class="caracteristica-numero">03</p>
+            <h3 class="titulo-secundario">Ofrecen garantías de seguridad</h3>
+            <p class="caracteristica-descripcion">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium.
+            </p>
+          </div>
+          <div class="caracteristica-imagen-contenedor">
+            <img
+              src="img/harley-davidson-xAHtaYIHlPI-unsplash.jpg"
+              class="caracteristica-imagen"
+              alt="caracteristica-moto"
+            />
+          </div>
+        </div>
+
+        <div class="container enlace-mas">
+          <a href="caracteristicas.html" class="link">Conocer más &rarr;</a>
+        </div>
+      </section>
+
+      <section class="seccion-modelos" id="modelos">
+        <div class="container center-text">
+          <span class="subtitulo">modelos</span>
+          <h2 class="titulo-principal">MotoSport ofrece variedad en modelos</h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="modelo">
+            <img
+              src="img/modelos/pexels-kipras-zabeliauskas-5365737.jpg"
+              class="modelo-imagen"
+              alt="Moto Kawasaki"
+            />
+            <div class="contenido-modelo">
+              <div class="modelo-chip">
+                <span class="chip chip--verde">Deportiva</span>
+              </div>
+              <p class="titulo-modelo">Moto Kawasaki 2021</p>
+              <ul class="caracteristicas-modelo">
+                <li class="cotenedor-modelo-caracteristica">
+                  <ion-icon
+                    class="icono-modelo"
+                    name="flame-outline"
+                  ></ion-icon>
+                  <span><strong>8,0 l/100km</strong> Consumo </span>
+                </li>
+                <li class="cotenedor-modelo-caracteristica">
+                  <ion-icon
+                    class="icono-modelo"
+                    name="speedometer-outline"
+                  ></ion-icon>
+
+                  <span>457 CV <strong>Potencia</strong></span>
+                </li>
+                <li class="cotenedor-modelo-caracteristica">
+                  <ion-icon class="icono-modelo" name="cash-outline"></ion-icon>
+                  <span><strong>$80.300</strong> Precio</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modelo">
+            <img
+              src="img/modelos/pexels-javier-aguilera-2611654.jpg"
+              class="modelo-imagen"
+              alt="Harley Davidson"
+            />
+            <div class="contenido-modelo">
+              <div class="modelo-chip">
+                <span class="chip chip--verde">Harley Davidson</span>
+                <span class="chip chip--amarillo">Oferta</span>
+              </div>
+              <p class="titulo-modelo">Harley Davidson</p>
+              <ul class="caracteristicas-modelo">
+                <li class="cotenedor-modelo-caracteristica">
+                  <ion-icon
+                    class="icono-modelo"
+                    name="flame-outline"
+                  ></ion-icon>
+
+                  <span><strong>6,9 l/100km</strong> Consumo</span>
+                </li>
+                <li class="cotenedor-modelo-caracteristica">
+                  <ion-icon class="icono-modelo" name="bicycle-outline"></ion-icon>
+
+                  <span><strong>2</strong> Cauchos SUV Grande</span>
+                </li>
+                <li class="cotenedor-modelo-caracteristica">
+                  <ion-icon
+                    class="icono-modelo"
+                    name="speedometer-outline"
+                  ></ion-icon>
+                  <span>195 CV <strong>Potencia</strong></span>
+                </li>
+                <li class="cotenedor-modelo-caracteristica">
+                  <ion-icon class="icono-modelo" name="cash-outline"></ion-icon>
+                  <span><strong>$39.00</strong> Precio (oferta)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="beneficios">
+            <h3 class="titulo-secundario">Beneficios de nuestro motos:</h3>
+            <ul class="lista">
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Suspensión Elevada</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Tracción Mejorada</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Menor Presión en Cauchos</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Seguridad</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Mantenimiento Preventivo</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Precio Accesible</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Atención Personalizada</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span> Alta Tecnología</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Confort total</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container enlace-mas">
+          <a href="modelos.html" class="link">Ver más modelos &rarr;</a>
+        </div>
+      </section>
+
+      <section class="seccion-clientes" id="clientes">
+        <div class="clientes-container">
+          <span class="subtitulo">clientes</span>
+          <h2 class="titulo-principal">
+            Conoce lo que nuestros clientes opinan
+          </h2>
+          <div class="clientes">
+            <figure class="cliente">
+              <img
+                class="cliente-imagen"
+                alt="Imagen de cliente de MotoSport"
+                src="img/clientes/marcos.jpg"
+              />
+              <blockquote class="cliente-mensaje">
+                Asistí hace 2 años a mi primera MotoSport. Luego de un mes después
+                me incluí en varios grupos y hoy tengo mi propia moto comprada
+                acá.
+              </blockquote>
+              <p class="cliente-nombre">&mdash; Marcos Lee</p>
+            </figure>
+
+            <figure class="cliente">
+              <img
+                class="cliente-imagen"
+                alt="Imagen de cliente de MotoSport"
+                src="img/clientes/ender.jpg"
+              />
+              <blockquote class="cliente-mensaje">
+                Confío mucho en las motos que presentan en MotoSport, son
+                seguros. Tengo dos motos y los dos los he comprado con ellos.
+              </blockquote>
+              <p class="cliente-nombre">&mdash; Ender Peña</p>
+            </figure>
+
+            <figure class="cliente">
+              <img
+                class="cliente-imagen"
+                alt="Imagen de cliente de MotoSport"
+                src="img/clientes/oscar.jpg"
+              />
+              <blockquote class="cliente-mensaje">
+                Obtuve un crédito con MotoSport y gracias a ello pude comprar mi
+                primera moto.
+              </blockquote>
+              <p class="cliente-nombre">&mdash; Oscar Cruz</p>
+            </figure>
+
+            <figure class="cliente">
+              <img
+                class="cliente-imagen"
+                alt="Imagen de cliente de MotoSport"
+                src="img/clientes/sara.jpg"
+              />
+              <blockquote class="cliente-mensaje">
+                Fui a MotoSport con mi familia una vez por curiosidad, desde ese
+                dia no me pierdo sus noticias y eventos.
+              </blockquote>
+              <p class="cliente-nombre">&mdash; Sara Linarez</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="exposicion">
+          <figure class="exposicion-container">
+            <img
+              src="img/galeria/artur-tumasjan-oQ1JNNKGIQs-unsplash.jpg"
+              alt="Exposiciones de motos en MotoSport"
+            />
+          </figure>
+          <figure class="exposicion-container">
+            <img
+              src="img/galeria/gijs-coolen-Ec1PBjOGoLw-unsplash.jpg"
+              alt="Exposiciones de motos en MotoSport"
+            />
+          </figure>
+          <figure class="exposicion-container">
+            <img
+              src="img/galeria/harley-davidson-QD6GvrDFPAA-unsplash.jpg"
+              alt="Exposiciones de motos en MotoSport"
+            />
+          </figure>
+          <figure class="exposicion-container">
+            <img
+              src="img/galeria/harley-davidson-Sac6Ri0Lhrc-unsplash.jpg"
+              alt="Exposiciones de motos en MotoSport"
+            />
+          </figure>
+          <figure class="exposicion-container">
+            <img
+              src="img/galeria/harley-davidson-zGzXsJUBQfs-unsplash.jpg"
+              alt="Exposiciones de motos en MotoSport"
+            />
+          </figure>
+          <figure class="exposicion-container">
+            <img
+              src="img/galeria/pelle-martin-YUt0kRV23Z0-unsplash.jpg"
+              alt="Exposiciones de motos en MotoSport"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="seccion-servicios" id="servicios">
+        <div class="container">
+          <span class="subtitulo">Servicio</span>
+          <h2 class="titulo-principal">
+            Conoce el precio de nuestro servicios
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="servicios-planes servicios-planes--basico">
+            <header class="servicio-titulo">
+              <p class="servicio-nombre">Basico</p>
+              <p class="servicio-precio"><span>$</span>299</p>
+              <p class="servicio-texto">
+                $13 por mes. Beneficios de bienvenida
+              </p>
+            </header>
+            <ul class="lista">
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Mantenimiento gratis por 1 año</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Respuesta originales para FORD</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Asitencia VIP a los eventos en tu región</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon class="lista-icono" name="close-outline"></ion-icon>
+                <span>Rebajas del 30% en todo los productos</span>
+              </li>
+            </ul>
+            <div class="servicio-boton">
+              <a href="#contacto" class="btn btn--full">¡Contactar!</a>
+            </div>
+          </div>
+
+          <div class="servicios-planes servicios-planes--pro">
+            <header class="servicio-titulo">
+              <p class="servicio-nombre">Pro</p>
+              <p class="servicio-precio"><span>$</span>549</p>
+              <p class="servicio-texto">
+                $35 por mes. Ahorra 30% que en otras agencias
+              </p>
+            </header>
+            <ul class="lista">
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Mantenimiento gratis <strong>de por vida</strong></span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span
+                  >Respuestos originales
+                  <strong>para cualquier marca</strong></span
+                >
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>VIP & Asitencia para 5 persona a los eventos</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span
+                  >Acceso exclusivo a todos los productos 50% de descuento</span
+                >
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="lista-icono"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Opiniones y decisiones para próximos eventos</span>
+              </li>
+            </ul>
+            <div class="servicio-boton">
+              <a href="#contacto" class="btn btn--full">¡Contactar!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid">
+          <aside class="servicio-footer">
+            Todos los precios estan sujetos a las regulaciones de la ley de
+            impuestos.
+          </aside>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="servicio">
+            <ion-icon class="servicio-icono" name="time-outline"></ion-icon>
+            <p class="servicio-titulo">Larga duración!</p>
+            <p class="servicio-text">
+              Nuestros motos están ensamblados para que su motor tenga una larga
+              vida útil.
+            </p>
+          </div>
+          <div class="servicio">
+            <ion-icon
+              class="servicio-icono"
+              name="finger-print-outline"
+            ></ion-icon>
+            <p class="servicio-titulo">Tecnologia a la vanguardia</p>
+            <p class="servicio-text">
+              motos con innovaciones tecnologicas y seguridad personal.
+            </p>
+          </div>
+          <div class="servicio">
+            <ion-icon
+              class="servicio-icono"
+              name="shield-checkmark-outline"
+            ></ion-icon>
+            <p class="servicio-titulo">Seguridad</p>
+            <p class="servicio-text">
+              Nuestros motos son ensamblados por expertos con materiales de la
+              mejor calidad.
+            </p>
+          </div>
+          <div class="servicio">
+            <ion-icon
+              class="servicio-icono"
+              name="speedometer-outline"
+            ></ion-icon>
+            <p class="servicio-titulo">Eficacia</p>
+            <p class="servicio-text">
+              Tenemos modelos que cuentan con bastante potencia si la rapidez y
+              adrenalina es lo tuyo
+            </p>
+          </div>
+        </div>
+        <div class="container enlace-mas">
+          <a target="_blank"  href="servicios.html" class="link">Conocer más servicios &rarr;</a>
+        </div>
+      </section>
+
+      <section class="seccion-contacto" id="contacto">
+        <div class="container">
+          <div class="contacto">
+            <div class="contacto-container">
+              <h2 class="titulo-principal">
+                Suscríbete y disfruta de las mejores ofertas!
+              </h2>
+              <p class="contacto-texto">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, dolor? Provident facere animi magni odit?
+              </p>
+              <form class="formulario-contacto">
+                <div>
+                  <label for="nombres">Nombres:</label>
+                  <input
+                    id="nombres"
+                    type="text"
+                    placeholder="Manuel El Eysami"
+                    name="nombres"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Correo electrónico</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="manuel@motosport.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-interes">¿En que estas interesado?</label>
+                  <select id="select-interes" name="interes" required>
+                    <option value="" required disabled selected>
+                      Seleccionar
+                    </option>
+                    <option value="eventos">Eventos MotoSport</option>
+                    <option value="ventas">Ventas de motos</option>
+                    <option value="noticias">
+                      Noticias del mundo de motos deportivos
+                    </option>
+                    <option value="servicios">Servicios</option>
+                    <option value="recomendaciones">
+                      Tips y recomendaciones
+                    </option>
+                    <option value="todos">Todas</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Enviar</button>
+              </form>
+            </div>
+            <div
+              class="contacto-imagen"
+              role="img"
+              aria-label="Exposicion de motos"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Expo CAR logo" src="img/logo-motosport.png" />
+          </a>
+
+          <ul class="redes">
+            <li>
+              <a class="footer-enlace" href="#"
+                ><ion-icon class="icono-redes" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-enlace" href="#"
+                ><ion-icon class="icono-redes" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-enlace" href="#"
+                ><ion-icon class="icono-redes" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="anio">2023</span> MotoSport. Todos los
+            derechos reservados.
+          </p>
+        </div>
+
+        <div class="direccion-container">
+          <p class="footer-titulo">Dirección</p>
+          <address class="contacto-footer">
+            <p class="direccion-footer">
+              Calle 48, al frente del local Don Pepe, Trujillo. Valera
+            </p>
+            <p>
+              <a class="footer-enlace" href="tel:4127102402">4127102402</a
+              ><br />
+              <a class="footer-enlace" href="mailto:motosport@info.com"
+                >motosport@info.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-titulo">Próximos eventos</p>
+          <ul class="footer-container">
+            <li><a class="footer-enlace" href="#">Maracaibo</a></li>
+            <li><a class="footer-enlace" href="#">Trujillo</a></li>
+            <li><a class="footer-enlace" href="#">Lecheria</a></li>
+            <li><a class="footer-enlace" href="#">Coro</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-titulo">Navegación</p>
+          <ul class="footer-container">
+            <li><a class="footer-enlace" href="#hero">Inicio</a></li>
+            <li><a class="footer-enlace" href="#modelos">Modelos</a></li>
+            <li><a class="footer-enlace" href="#clientes">Clientes</a></li>
+            <li><a class="footer-enlace" href="#servicios">Servicio</a></li>
+            <li><a class="footer-enlace" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-titulo">Patrocinadores</p>
+          <ul class="footer-container">
+            <li><a class="footer-enlace" href="#">Kawasaki </a></li>
+            <li><a class="footer-enlace" href="#">Aprilia</a></li>
+            <li><a class="footer-enlace" href="#">Honda</a></li>
+            <li><a class="footer-enlace" href="#">Suzuki</a></li>
+            <li><a class="footer-enlace" href="#">BMW</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
